@@ -1,0 +1,471 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Anton;
+    src: url(../assets/fonts/Anton-Regular.ttf);
+}
+
+p {
+    text-align: center;
+    padding: 0 20px;
+    align-items: center;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h2 {
+    font-family: Anton, Arial;
+    margin: 2% 22%;
+    justify-self: center;
+}
+.nombre-facu {
+    font-family: Anton;
+    margin-left: 12%;
+}
+
+body.index {
+    font-family: Arial, sans-serif;
+    margin: 5% 5% 10% 5%;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: url(../assets/image/login.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+body.index1 {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: url(../assets/image/login.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+body.menu {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.column {
+    float: left;
+    position: relative;
+    width: 33.33%;
+    padding: 10px;
+    height: auto;
+    display: grid;
+}
+
+.columnMaterias {
+    float: left;
+    position: relative;
+    width: 60%;
+    padding: 10px;
+    margin-right: 6%;
+    height: auto;
+    display: flow-root;
+    visibility: hidden; 
+    text-align: center;
+}
+
+.columnText {
+    float: left;
+    width: 90%;
+    padding: 10px;
+    height: auto;
+    display: grid;
+    margin: 1% 5%;
+}
+
+h2.ingresantes {
+    font-family: Anton, Arial;
+    margin: 2% 10%;
+    justify-self: center;
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0 auto;
+}
+
+h2.comp {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.rowMateria {
+    content: "";
+    clear: both;
+    margin: 0 10% 5%;
+}
+
+.rowComprobante {
+    content: "";
+    clear: both;
+    margin: 0% 10%;
+    padding: 1% 20%;
+}
+
+.opciones {
+    font-size: 20px;
+    font-weight:bolder;
+    border: 1px solid #bdbfc1;
+    width: 19%;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 15px;
+    color: rgba(89, 80, 76, 1);
+    height: 75px;
+
+}
+
+.opciones:hover {
+    color: #9b9b9b;
+    border: 1.5px solid #030303;
+    color: rgb(0, 0, 0);
+}
+
+.logoCarrera {
+    width: 250px;
+    border: 1px solid #bdbfc1;
+    height: 250px;
+    margin: .5em 5em;
+    border-radius: 10px;
+}
+
+.horarios {
+    width: 500px;
+    border: 1px solid #bdbfc1;
+    height: 300px;
+    margin: 5em 0em;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.list li {
+    margin-left: 30%;
+    justify-self: center;
+    list-style-type: none;
+}
+
+.back_btn {
+    width: 7%;
+    font-size: 20px;
+    font-weight:bolder;
+    border: 1px solid #bdbfc1;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 15px;
+    color: rgba(89, 80, 76, 1);
+    text-decoration: none;
+}
+
+.back_btn:hover {
+    color: #9b9b9b;
+    border: 1.5px solid #030303;
+    color: rgb(0, 0, 0);
+}
+
+.logo1 {
+    width: 300px;
+    height: auto;
+    margin: 0% 0% 10%;
+}
+
+.logo2 {
+    width: 250px;
+    height: auto;
+    margin: .5em 5em;
+}
+
+.text-common {
+    text-align: left;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.83);
+}
+
+.caja1 {
+    width: 22em;
+    height: auto;
+    position: relative;
+    margin: auto;
+    padding: 0 1.5em;
+    color: black;
+    border-radius: 1em;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+.caja2 {
+    width: 40em;
+    position: relative;
+    color: black;
+    border-radius: 1em;
+}
+
+.divSombra {
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    vertical-align: middle;
+    line-height: 3%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.divSombra::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.formtlo {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+.div1 {
+    position: relative;
+    display: inline-block;
+    margin: 10px 25px;
+    top: 0px;
+    overflow: hidden;
+}
+
+.div2 {
+    position: relative;
+    display: inline-block;
+    margin: 10px 25px;
+    top: 0px;
+    overflow: hidden;
+}
+
+.select {
+    position: relative;
+    padding: 0.5em 5em;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.604);
+    display: inline-block;
+    margin: 10px 120px;
+    overflow: hidden;
+}
+
+.selectCarrera {
+    position: relative;
+    padding: 0.5em 0em;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.604);
+    display: inline-block;
+    margin: 10px 5px;
+    overflow: hidden;
+}
+
+.date {
+    padding: 0.5em 4em;
+    margin-right: 120px;
+}
+
+.label {
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 1em;
+    color: black;
+    margin: 10px 20px;
+    overflow: hidden;
+}
+
+input,a {
+    padding: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-bottom: 0.1em solid #BDBFC1;
+    color: black;
+    text-align: left;
+    margin: 1em;
+    font-weight: bold;
+}
+
+input:hover,
+select:hover {
+    border-bottom: 0.1em solid #1E265D;
+}
+
+input::placeholder {
+    color: #1E265D;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.btnIndex {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btnIndex:hover {
+    background-color: #2980b9;
+}
+
+.btnEnviar {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btnEnviar:hover {
+    background-color: #2980b9;
+}
+
+.tit_h3 {
+    margin-top: 4%;
+}
+
+header {
+    height: 100px;
+    background-image: url(../assets/image/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.logo_header {
+    height: 100px;
+    margin-left: auto;
+}
+
+.title-header {
+    font-size: 40px;
+    margin-right: 4%;
+    font-family: Anton, arial;
+    letter-spacing: 2px;
+}
+.perfil {
+    height: 100px;
+    margin-right: auto;
+}
+
+.button-h {
+    height: 65px;
+    margin-right: 4%;
+}
+
+.checkbox1 {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+.comprobante {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.datos p {
+    padding: 2% 5%;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th {
+    border: 5px solid #808080;
+}
+
+.mail {
+    padding: 5% 5%;
+    text-align: left;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .caja1 {
+        width: 90%;
+        padding: 1em;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
